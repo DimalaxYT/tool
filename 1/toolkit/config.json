@@ -1,0 +1,47 @@
+{
+  "scan": {"cidr": "auto", "ports": "auto"},
+  "arp": {"target": "", "gateway": "", "iface": "eth0"},
+  "sniff": {"iface": "eth0", "filter": "ip"},
+  "ssh": {"host": "", "port": 22,
+          "userlist": "payloads/wordlist_users.txt",
+          "passlist": "payloads/wordlist_pass.txt"},
+  "web": {"url": ""},
+  "keylog": {"outfile": "output/keys.log"},
+  "shell": {"mode": "server", "host": "0.0.0.0", "port": 4444, "secret": "change_me"},
+  "wifi": {"iface": "wlan0", "bssid": "", "channel": 6, "capture": "output/handshake.cap"},
+  "crypto": {"wordlist": "payloads/wordlist_pass.txt"},
+  "persist": {"payload": "", "method": "auto"},
+  "phishing": {
+    "smtp_host": "", "smtp_port": 587,
+    "smtp_user": "", "smtp_pass": "",
+    "smtp_tls": true,
+    "from_name": "", "from_email": "", "reply_to": "",
+    "subject": "",
+    "template": "payloads/mail_templates/template_defaut.html",
+    "targets": "payloads/targets_mail.txt",
+    "delay_min": 5, "delay_max": 15, "threads": 1,
+    "redirect_url": "http://127.0.0.1:8080/capture"
+  },
+  "account_cracker": {
+    "leaked_db": "payloads/leaked_creds.txt",
+    "threads": 10, "delay": 0.5,
+    "use_proxies": false,
+    "proxies_file": "payloads/proxies.txt",
+    "sites": ["github","twitter","reddit","instagram"]
+  },
+  "osint": {
+    "dorks_file": "payloads/dorks.txt",
+    "output_json": "output/osint_report.json",
+    "output_html": "output/osint_report.html"
+  },
+  "brihub": {
+    "endpoint": "https://api.brihub.ru/api/v1/search",
+    "per_page": 50,
+    "max_pages": 10,
+    "flexible": true
+  },
+  "ddos": {
+    "target": "", "port": 80, "method": "http_flood",
+    "threads": 200, "duration": 30, "use_tor": false, "spoof_source": true
+  }
+}

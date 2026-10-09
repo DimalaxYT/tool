@@ -1,0 +1,3 @@
+exemple@domaine.com
+domaine.com
+8.8.8.8

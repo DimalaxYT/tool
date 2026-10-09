@@ -1,0 +1,10 @@
+scapy
+paramiko
+requests
+pynput
+cryptography
+colorama
+beautifulsoup4
+dnspython
+stem
+PySocks

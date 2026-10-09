@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Toolkit
+Comment=Lance le toolkit de pentest
+Exec=/home/tiupsu/Bureau/Tools/1/toolkit/Lancer.sh
+Icon=utilities-terminal
+Terminal=true
+Categories=Network;Security;
+Path=/home/tiupsu/Bureau/Tools/1/toolkit
+StartupNotify=true

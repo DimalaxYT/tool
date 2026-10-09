@@ -1,0 +1,231 @@
+[2026-10-09 13:32:34,607] [ERROR] Erreur module 14
+Traceback (most recent call last):
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 388, in main_menu
+    action()
+    ~~~~~~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 282, in run_osint
+    from modules.osint_collector import OSINTCollector
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/modules/osint_collector.py", line 290
+    self.report["sections"]["domain"] = {
+                                        ^
+SyntaxError: '{' was never closed
+[2026-10-09 13:33:09,578] [ERROR] Erreur module 14
+Traceback (most recent call last):
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 388, in main_menu
+    action()
+    ~~~~~~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 282, in run_osint
+    from modules.osint_collector import OSINTCollector
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/modules/osint_collector.py", line 290
+    self.report["sections"]["domain"] = {
+                                        ^
+SyntaxError: '{' was never closed
+[2026-10-09 13:33:20,767] [ERROR] Erreur module 1
+Traceback (most recent call last):
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 388, in main_menu
+    action()
+    ~~~~~~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 148, in run_scan
+    hosts = scanner.arp_scan()
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/modules/network_scanner.py", line 24, in arp_scan
+    res = srp(pkt, timeout=3, verbose=0)[0]
+          ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/.venv/lib/python3.14/site-packages/scapy/sendrecv.py", line 752, in srp
+    s = iface.l2socket()(promisc=promisc, iface=iface,
+                         filter=filter, nofilter=nofilter, type=type)
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/.venv/lib/python3.14/site-packages/scapy/arch/linux/__init__.py", line 219, in __init__
+    self.ins = socket.socket(
+               ~~~~~~~~~~~~~^
+        socket.AF_PACKET, socket.SOCK_RAW, socket.htons(type))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/socket.py", line 236, in __init__
+    _socket.socket.__init__(self, family, type, proto, fileno)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 1] Operation not permitted
+[2026-10-09 13:34:56,842] [ERROR] Erreur module 14
+Traceback (most recent call last):
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 388, in main_menu
+    action()
+    ~~~~~~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 282, in run_osint
+    from modules.osint_collector import OSINTCollector
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/modules/osint_collector.py", line 290
+    self.report["sections"]["domain"] = {
+                                        ^
+SyntaxError: '{' was never closed
+[2026-10-09 13:35:00,950] [ERROR] Erreur module 14
+Traceback (most recent call last):
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 388, in main_menu
+    action()
+    ~~~~~~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 282, in run_osint
+    from modules.osint_collector import OSINTCollector
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/modules/osint_collector.py", line 290
+    self.report["sections"]["domain"] = {
+                                        ^
+SyntaxError: '{' was never closed
+[2026-10-09 13:35:22,852] [ERROR] Erreur module 9
+Traceback (most recent call last):
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 388, in main_menu
+    action()
+    ~~~~~~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 239, in run_wifi
+    WiFiAttacker(iface, bssid, ch, "output/handshake.cap").run()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WiFiAttacker' object has no attribute 'run'
+[2026-10-09 13:35:34,643] [ERROR] Erreur module 10
+Traceback (most recent call last):
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 388, in main_menu
+    action()
+    ~~~~~~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 246, in run_crypto
+    r = CryptoTools(wl).brute_dict(h)
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/modules/crypto_tools.py", line 19, in brute_dict
+    algo = self.detect_hash(target)
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/modules/crypto_tools.py", line 15, in detect_hash
+    return {32: "md5", 40: "sha1", 64: "sha256"}.get(len(h))
+                                                     ~~~^^^
+TypeError: object of type 'NoneType' has no len()
+[2026-10-09 13:57:17,771] [ERROR] Module 1
+Traceback (most recent call last):
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 129, in main_menu
+    print(); a()
+             ~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 99, in run_scan
+    def run_scan():     from modules.network_scanner import run_interactive;      run_interactive()
+                                                                                  ~~~~~~~~~~~~~~~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/modules/network_scanner.py", line 86, in run_interactive
+    hosts = scanner.arp_scan()
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/modules/network_scanner.py", line 29, in arp_scan
+    res = srp(pkt, timeout=3, verbose=0)[0]
+          ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/.venv/lib/python3.14/site-packages/scapy/sendrecv.py", line 752, in srp
+    s = iface.l2socket()(promisc=promisc, iface=iface,
+                         filter=filter, nofilter=nofilter, type=type)
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/.venv/lib/python3.14/site-packages/scapy/arch/linux/__init__.py", line 219, in __init__
+    self.ins = socket.socket(
+               ~~~~~~~~~~~~~^
+        socket.AF_PACKET, socket.SOCK_RAW, socket.htons(type))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/socket.py", line 236, in __init__
+    _socket.socket.__init__(self, family, type, proto, fileno)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 1] Operation not permitted
+[2026-10-09 14:02:25,761] [ERROR] Module 3
+Traceback (most recent call last):
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 129, in main_menu
+    print(); a()
+             ~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 101, in run_sniff
+    def run_sniff():    from modules.packet_sniffer import run_interactive;       run_interactive()
+                                                                                  ~~~~~~~~~~~~~~~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/modules/packet_sniffer.py", line 75, in run_interactive
+    s.start_capture(dur)
+    ~~~~~~~~~~~~~~~^^^^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/modules/packet_sniffer.py", line 50, in start_capture
+    sniff(iface=self.iface, filter=self.filter, prn=self.cb,
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          store=0, timeout=duration)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/.venv/lib/python3.14/site-packages/scapy/sendrecv.py", line 1416, in sniff
+    sniffer._run(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/.venv/lib/python3.14/site-packages/scapy/sendrecv.py", line 1261, in _run
+    sniff_sockets[_RL2(iface)(type=ETH_P_ALL, iface=iface,
+                  ~~~~^^^^^^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/.venv/lib/python3.14/site-packages/scapy/sendrecv.py", line 1246, in <lambda>
+    _RL2 = lambda i: L2socket or resolve_iface(i).l2listen()  # type: Callable[[_GlobInterfaceType], Callable[..., SuperSocket]]  # noqa: E501
+                                 ~~~~~~~~~~~~~^^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/.venv/lib/python3.14/site-packages/scapy/interfaces.py", line 437, in resolve_iface
+    return resolve_iface(dev, retry=False)
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/.venv/lib/python3.14/site-packages/scapy/interfaces.py", line 434, in resolve_iface
+    raise ValueError("Interface '%s' not found !" % dev)
+ValueError: Interface 'eth0' not found !
+[2026-10-09 14:03:58,064] [ERROR] Module 1
+Traceback (most recent call last):
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 129, in main_menu
+    print(); a()
+             ~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 99, in run_scan
+    def run_scan():     from modules.network_scanner import run_interactive;      run_interactive()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/modules/network_scanner.py", line 55, in <module>
+    (re.compile(r"SSH-([\d\.]+)-([\w\.\-]+)"), "SSH"),
+     ^^
+NameError: name 're' is not defined. Did you forget to import 're'?
+[2026-10-09 14:05:50,955] [ERROR] Module 1
+Traceback (most recent call last):
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 129, in main_menu
+    print(); a()
+             ~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 99, in run_scan
+    def run_scan():     from modules.network_scanner import run_interactive;      run_interactive()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/modules/network_scanner.py", line 55, in <module>
+    (re.compile(r"SSH-([\d\.]+)-([\w\.\-]+)"), "SSH"),
+     ^^
+NameError: name 're' is not defined. Did you forget to import 're'?
+[2026-10-09 14:07:22,310] [ERROR] Module 1
+Traceback (most recent call last):
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 129, in main_menu
+    print(); a()
+             ~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 99, in run_scan
+    def run_scan():     from modules.network_scanner import run_interactive;      run_interactive()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/modules/network_scanner.py", line 55, in <module>
+    (re.compile(r"SSH-([\d\.]+)-([\w\.\-]+)"), "SSH"),
+     ^^
+NameError: name 're' is not defined. Did you forget to import 're'?
+[2026-10-09 14:07:54,654] [ERROR] Module 1
+Traceback (most recent call last):
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 129, in main_menu
+    print(); a()
+             ~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 99, in run_scan
+    def run_scan():     from modules.network_scanner import run_interactive;      run_interactive()
+                                                                                  ~~~~~~~~~~~~~~~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/modules/network_scanner.py", line 165, in run_interactive
+    hosts = scanner.arp_scan()
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/modules/network_scanner.py", line 61, in arp_scan
+    res = srp(pkt, timeout=3, verbose=0)[0]
+          ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/.venv/lib/python3.14/site-packages/scapy/sendrecv.py", line 752, in srp
+    s = iface.l2socket()(promisc=promisc, iface=iface,
+                         filter=filter, nofilter=nofilter, type=type)
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/.venv/lib/python3.14/site-packages/scapy/arch/linux/__init__.py", line 219, in __init__
+    self.ins = socket.socket(
+               ~~~~~~~~~~~~~^
+        socket.AF_PACKET, socket.SOCK_RAW, socket.htons(type))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/socket.py", line 236, in __init__
+    _socket.socket.__init__(self, family, type, proto, fileno)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 1] Operation not permitted
+[2026-10-09 14:18:29,028] [ERROR] Module 1
+Traceback (most recent call last):
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 187, in main_menu
+    print(); a()
+             ~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 156, in run_scan
+    def run_scan():     from modules.network_scanner import run_interactive;      run_interactive()
+                                                                                  ~~~~~~~~~~~~~~~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/modules/network_scanner.py", line 283, in run_interactive
+    scanner.run_wan(target)
+    ~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/modules/network_scanner.py", line 252, in run_wan
+    self.save()
+    ~~~~~~~~~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/modules/network_scanner.py", line 220, in save
+    with open("output/scan_results.json","w",encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'output/scan_results.json'
+[2026-10-09 14:21:21,365] [ERROR] Module 9
+Traceback (most recent call last):
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 187, in main_menu
+    print(); a()
+             ~^^
+  File "/home/tiupsu/Bureau/Tools/1/toolkit/toolkit.py", line 164, in run_wifi
+    def run_wifi():     from modules.wifi_attacker import run_interactive;        run_interactive()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'run_interactive' from 'modules.wifi_attacker' (/home/tiupsu/Bureau/Tools/1/toolkit/modules/wifi_attacker.py)

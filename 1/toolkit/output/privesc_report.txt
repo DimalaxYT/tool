@@ -1,0 +1,284 @@
+===== SUID =====
+
+
+===== SGID =====
+
+
+===== SUDO =====
+
+
+===== CRON =====
+# /etc/crontab: configuration file for cron
+
+# See cron(8) and crontab(5) for details.
+
+# m h dom mon dow user command
+-rw-r--r-- 1 root root   74 22 sept.  2025 /etc/cron.deny
+
+/etc/cron.d:
+total 12
+drwxr-xr-x  2 root root 4096  7 oct.  10:49 .
+drwxr-xr-x 90 root root 4096  9 oct.  12:36 ..
+-rw-r--r--  1 root root  128 22 sept.  2025 0hourly
+
+/etc/cron.daily:
+total 8
+drwxr-xr-x  2 root root 4096 22 sept.  2025 .
+drwxr-xr-x 90 root root 4096  9 oct.  12:36 ..
+
+/etc/cron.hourly:
+total 12
+drwxr-xr-x  2 root root 4096  7 oct.  10:49 .
+drwxr-xr-x 90 root root 4096  9 oct.  12:36 ..
+-rwxr-xr-x  1 root root  843 22 sept.  2025 0anacron
+
+/etc/cron.monthly:
+total 8
+drwxr-xr-x  2 root root 4096 22 sept.  2025 .
+drwxr-xr-x 90 root root 4096  9 oct.  12:36 ..
+
+/etc/cron.weekly:
+total 8
+drwxr-xr-x  2 root root 4096 22 sept.  2025 .
+drwxr-xr-x 90 root root 4096  9 oct.  12:36 ..
+
+
+===== KERNEL =====
+Linux archlinux 7.2.9-arch1-1 #1 SMP PREEMPT_DYNAMIC Sat, 03 Oct 2026 11:43:28 +0000 x86_64 GNU/Linux
+
+
+===== CAPS =====
+/usr/lib/gstreamer-1.0/gst-ptp-helper cap_net_bind_service,cap_net_admin=ep
+/usr/lib/ksystemstats_intel_helper cap_perfmon=ep
+/usr/lib/ksysguard/ksgrd_network_helper cap_net_raw=ep
+/usr/bin/newgidmap cap_setgid=ep
+/usr/bin/rlogin cap_net_bind_service=ep
+/usr/bin/newuidmap cap_setuid=ep
+/usr/bin/rsh cap_net_bind_service=ep
+/usr/bin/rcp cap_net_bind_service=ep
+/usr/bin/kalarm cap_wake_alarm=ep
+/usr/bin/kwin_wayland cap_sys_nice=ep
+
+
+===== WRITABLE_DIRS =====
+/dev/mqueue
+/dev/shm
+/tmp
+/tmp/com.google.Chrome.0WMfMx
+/tmp/plasma-csd-generator.iTuNJb
+/tmp/.font-unix
+/tmp/.XIM-unix
+/tmp/.ICE-unix
+/tmp/.X11-unix
+/run/user/1000
+/run/user/1000/.dbus-proxy
+/run/user/1000/app
+/run/user/1000/app/com.discordapp.Discord
+/run/user/1000/app/com.visualstudio.code
+/run/user/1000/.flatpak
+/run/user/1000/.flatpak/4090268440-private
+/run/user/1000/.flatpak/4090268440
+/run/user/1000/.flatpak/com.discordapp.Discord
+/run/user/1000/.flatpak/com.discordapp.Discord/tmp
+/run/user/1000/.flatpak/com.discordapp.Discord/tmp/.X11-unix
+/run/user/1000/.flatpak/com.discordapp.Discord/xdg-run
+/run/user/1000/.flatpak/1020214182-private
+/run/user/1000/.flatpak/1020214182
+/run/user/1000/.flatpak/4421878-private
+/run/user/1000/.flatpak/4421878
+/run/user/1000/.flatpak/wl
+/run/user/1000/.flatpak/com.visualstudio.code
+/run/user/1000/.flatpak/com.visualstudio.code/tmp
+/run/user/1000/.flatpak/com.visualstudio.code/tmp/mcp-aAuHPf
+/run/user/1000/.flatpak/com.visualstudio.code/tmp/vscode-ah-e89921ad9979
+
+
+===== WRITABLE_FILES =====
+/tmp/plasma-browser-integration_artwork_ILVXYK.jpg
+/tmp/.X1-lock
+/run/user/1000/.flatpak/4090268440/pid
+/run/user/1000/.flatpak/4090268440/bwrapinfo.json
+/run/user/1000/.flatpak/4090268440/info
+/run/user/1000/.flatpak/4090268440/.ref
+/run/user/1000/.flatpak/com.discordapp.Discord/.ref
+/run/user/1000/.flatpak/1020214182/pid
+/run/user/1000/.flatpak/1020214182/bwrapinfo.json
+/run/user/1000/.flatpak/1020214182/info
+/run/user/1000/.flatpak/1020214182/.ref
+/run/user/1000/.flatpak/4421878/pid
+/run/user/1000/.flatpak/4421878/bwrapinfo.json
+/run/user/1000/.flatpak/4421878/info
+/run/user/1000/.flatpak/4421878/.ref
+/run/user/1000/.flatpak/com.visualstudio.code/.ref
+/run/user/1000/.flatpak/1726167502/pid
+/run/user/1000/.flatpak/1726167502/bwrapinfo.json
+/run/user/1000/.flatpak/1726167502/info
+/run/user/1000/.flatpak/1726167502/.ref
+/run/user/1000/.flatpak-helper/monitor/timezone
+/run/user/1000/.flatpak-helper/monitor/localtime
+/run/user/1000/.flatpak-helper/monitor/gai.conf
+/run/user/1000/.flatpak-helper/monitor/hosts
+/run/user/1000/.flatpak-helper/monitor/host.conf
+/run/user/1000/.flatpak-helper/monitor/resolv.conf
+/run/user/1000/KSMserver__1
+/run/user/1000/iceauth_fKLHBa
+/run/user/1000/dconf/user
+/run/user/1000/pipewire-0-manager.lock
+
+
+===== PASSWD =====
+root:x:0:0::/root:/usr/bin/bash
+bin:x:1:1::/:/usr/bin/nologin
+daemon:x:2:2::/:/usr/bin/nologin
+mail:x:8:12::/var/spool/mail:/usr/bin/nologin
+ftp:x:14:11::/srv/ftp:/usr/bin/nologin
+http:x:33:33::/srv/http:/usr/bin/nologin
+nobody:x:65534:65534:Kernel Overflow User:/:/usr/bin/nologin
+dbus:x:81:81:System Message Bus:/:/usr/bin/nologin
+systemd-coredump:x:979:979:systemd Core Dumper:/:/usr/bin/nologin
+systemd-imds:x:978:978:systemd Instance Metadata:/:/usr/bin/nologin
+systemd-network:x:977:977:systemd Network Management:/:/usr/bin/nologin
+systemd-oom:x:976:976:systemd Userspace OOM Killer:/:/usr/bin/nologin
+systemd-journal-remote:x:975:975:systemd Journal Remote:/:/usr/bin/nologin
+systemd-resolve:x:974:974:systemd Resolver:/:/usr/bin/nologin
+systemd-timesync:x:973:973:systemd Time Synchronization:/:/usr/bin/nologin
+tss:x:972:972:tss user for tpm2:/:/usr/bin/nologin
+uuidd:x:971:971:UUID generator helper daemon:/var/lib/libuuid:/usr/bin/nologin
+alpm:x:970:970:Arch Linux Package Management:/:/usr/bin/nologin
+tiupsu:x:1000:1000::/home/tiupsu:/usr/bin/bash
+polkitd:x:102:102:User for polkitd:/:/usr/bin/nologin
+rtkit:x:969:969:RealtimeKit:/:/usr/bin/nologin
+avahi:x:967:967:Avahi mDNS/DNS-SD daemon:/:/usr/bin/nologin
+colord:x:966:966:colord colour management daemon:/var/lib/colord:/usr/bin/nologin
+flatpak:x:965:965:Flatpak system helper:/:/usr/bin/nologin
+pcscd:x:964:964:PC/SC Smart Card Daemon:/:/usr/bin/nologin
+plasmalogin:x:963:963:PLASMALOGIN Greeter Account:/var/lib/plasmalogin:/usr/bin/nologin
+saned:x:962:962:SANE daemon user:/:/usr/bin/nologin
+sddm:x:961:961:SDDM Greeter Account:/var/lib/sddm:/usr/bin/nologin
+git:x:960:960:git daemon user:/:/usr/bin/git-shell
+nvidia-persistenced:x:143:143:NVIDIA Persistence Daemon:/:/usr/bin/nologin
+_talkd:x:959:959:User for legacy talkd server:/:/usr/bin/nologin
+
+
+===== ENV =====
+SHELL=/usr/bin/bash
+SESSION_MANAGER=local/archlinux:@/tmp/.ICE-unix/1008,unix/archlinux:/tmp/.ICE-unix/1008
+WINDOWID=94045643964672
+COLORTERM=truecolor
+XDG_CONFIG_DIRS=/home/tiupsu/.config/kdedefaults:/etc/xdg
+KGLOBALACCELD_PLATFORM=org.kde.kwin
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session1
+XDG_MENU_PREFIX=plasma-
+ICEAUTHORITY=/run/user/1000/iceauth_fKLHBa
+LANGUAGE=
+VSSCRIPT_PATH=/usr/lib/python3.14/site-packages/vapoursynth/libvsscript.so
+SHELL_SESSION_ID=e5634c5ad55e466c80f8942787023eca
+MEMORY_PRESSURE_WRITE=c29tZSAyMDAwMDAgMjAwMDAwMAA=
+DESKTOP_SESSION=plasma
+GTK_RC_FILES=/etc/gtk/gtkrc:/home/tiupsu/.gtkrc:/home/tiupsu/.config/gtkrc
+XDG_SEAT=seat0
+PWD=/home/tiupsu/Bureau/Tools/1/toolkit
+LOGNAME=tiupsu
+XDG_SESSION_DESKTOP=KDE
+XDG_SESSION_TYPE=wayland
+SYSTEMD_EXEC_PID=855
+_=/usr/bin/env
+XAUTHORITY=/run/user/1000/xauth_cKKBJk
+MOTD_SHOWN=pam
+XKB_DEFAULT_MODEL=pc105
+GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/tiupsu/.gtkrc-2.0:/home/tiupsu/.config/gtkrc-2.0
+HOME=/home/tiupsu
+LANG=fr_FR.UTF-8
+_JAVA_AWT_WM_NONREPARENTING=1
+XDG_CURRENT_DESKTOP=KDE
+KONSOLE_DBUS_SERVICE=:1.244
+VIRTUAL_ENV=/home/tiupsu/Bureau/Tools/1/toolkit/.venv
+MEMORY_PRESSURE_WATCH=/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/plasma-kwin_wayland.service/memory.pressure
+WAYLAND_DISPLAY=wayland-0
+KONSOLE_DBUS_SESSION=/Sessions/1
+PROFILEHOME=
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+INVOCATION_ID=ea0643d9d7374998a69ff96eb7c3f21a
+KONSOLE_VERSION=260801
+MANAGERPID=813
+KDE_SESSION_UID=1000
+XKB_DEFAULT_LAYOUT=fr
+XDG_SESSION_CLASS=user
+__EGL_EXTERNAL_PLATFORM_CONFIG_FILENAMES=/usr/share/egl/egl_external_platform.d/09_nvidia_wayland2.json:/usr/share/egl/egl_external_platform.d/15_nvidia_gbm.json:/usr/share/egl/egl_external_platform.d/20_nvidia_xcb.json:/usr/share/egl/egl_external_platform.d/20_nvidia_xlib.json
+TERM=xterm-256color
+KONSOLE_DBUS_ACTIVATION_COOKIE=i541v2tleueLb7UHt1Iae7vhUWEpl0LgqDc4rPeKzAI=
+USER=tiupsu
+COLORFGBG=15;0
+QT_WAYLAND_RECONNECT=1
+KDE_SESSION_VERSION=6
+PAM_KWALLET5_LOGIN=/run/user/1000/kwallet5.socket
+DISPLAY=:1
+SHLVL=1
+XDG_VTNR=1
+XDG_SESSION_ID=2
+VIRTUAL_ENV_PROMPT=.venv
+MANAGERPIDFDID=36914
+XDG_RUNTIME_DIR=/run/user/1000
+DEBUGINFOD_URLS=https://debuginfod.archlinux.org 
+JOURNAL_STREAM=10:9990
+XDG_DATA_DIRS=/home/tiupsu/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+KDE_FULL_SESSION=true
+PATH=/home/tiupsu/Bureau/Tools/1/toolkit/.venv/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+KDE_APPLICATIONS_AS_SCOPE=1
+MAIL=/var/spool/mail/tiupsu
+XKB_DEFAULT_OPTIONS=terminate:ctrl_alt_bksp
+FLATPAK_TTY_PROGRESS=1
+OLDPWD=/home/tiupsu
+KONSOLE_DBUS_WINDOW=/Windows/1
+
+
+===== DOCKER =====
+no docker
+
+
+===== NFS =====
+
+
+===== SYSTEMD_TIMERS =====
+NEXT                           LEFT LAST                               PASSED UNIT                             ACTIVATES
+Sat 2026-10-10 00:00:00 CEST     9h -                                       - shadow.timer                     shadow.service
+Sat 2026-10-10 12:55:29 CEST    22h Fri 2026-10-09 12:55:29 CEST 1h 25min ago systemd-tmpfiles-clean.timer     systemd-tmpfiles-clean.service
+Mon 2026-10-12 00:39:03 CEST 2 days Wed 2026-10-07 10:40:02 CEST            - fstrim.timer                     fstrim.service
+Mon 2026-10-12 21:01:26 CEST 3 days Wed 2026-10-07 10:38:52 CEST            - archlinux-keyring-wkd-sync.timer archlinux-keyring-wkd-sync.service
+
+4 timers listed.
+Pass --all to see loaded but inactive timers, too.
+
+
+===== NETSTAT =====
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
+udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*   
+udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*   
+udp   UNCONN 0      0        224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=1937,fd=80))
+udp   UNCONN 0      0        224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=1765,fd=159))
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*    users:(("kdeconnectd",pid=1231,fd=18))
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*   
+udp   UNCONN 0      0            0.0.0.0:5355       0.0.0.0:*   
+udp   UNCONN 0      0            0.0.0.0:52081      0.0.0.0:*    users:(("kdeconnectd",pid=1231,fd=20))
+udp   UNCONN 0      0                  *:58039            *:*    users:(("kdeconnectd",pid=1231,fd=23))
+udp   UNCONN 0      0               [::]:5353          [::]:*   
+udp   UNCONN 0      0                  *:5353             *:*    users:(("kdeconnectd",pid=1231,fd=19))
+udp   UNCONN 0      0               [::]:5355          [::]:*   
+udp   UNCONN 0      0                  *:1716             *:*    users:(("kdeconnectd",pid=1231,fd=16))
+udp   UNCONN 0      0                  *:48368            *:*    users:(("kdeconnectd",pid=1231,fd=22))
+udp   UNCONN 0      0                  *:52582            *:*    users:(("kdeconnectd",pid=1231,fd=21))
+tcp   LISTEN 0      511        127.0.0.1:46443      0.0.0.0:*    users:(("code",pid=5135,fd=14))
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*   
+tcp   LISTEN 0      4096         0.0.0.0:5355       0.0.0.0:*   
+tcp   LISTEN 0      128        127.0.0.1:11988      0.0.0.0:*   
+tcp   LISTEN 0      128        127.0.0.1:11987      0.0.0.0:*   
+tcp   LISTEN 0      511        127.0.0.1:6463       0.0.0.0:*    users:(("Discord",pid=9426,fd=117))
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*   
+tcp   LISTEN 0      128            [::1]:11988         [::]:*   
+tcp   LISTEN 0      128            [::1]:11987         [::]:*   
+tcp   LISTEN 0      4096            [::]:5355          [::]:*   
+tcp   LISTEN 0      50                 *:1716             *:*    users:(("kdeconnectd",pid=1231,fd=17))
+
+
+===== GTFOBINS EXPLOITABLES =====

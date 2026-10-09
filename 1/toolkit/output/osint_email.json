@@ -1,0 +1,52 @@
+{
+  "target": "leszinzindudimanche@gmail.com",
+  "timestamp": "2026-10-09T13:56:15.274257",
+  "sections": {
+    "email": {
+      "target": "leszinzindudimanche@gmail.com",
+      "domain": "gmail.com",
+      "hibp": {
+        "found": false,
+        "count": 0
+      },
+      "social": {
+        "Instagram": "https://instagram.com/leszinzindudimanche",
+        "Reddit": "https://reddit.com/user/leszinzindudimanche",
+        "TikTok": "https://tiktok.com/@leszinzindudimanche",
+        "Pinterest": "https://pinterest.com/leszinzindudimanche",
+        "Telegram": "https://t.me/leszinzindudimanche",
+        "Twitch": "https://twitch.tv/leszinzindudimanche",
+        "Steam": "https://steamcommunity.com/id/leszinzindudimanche"
+      },
+      "dorks": [
+        {
+          "dork": "\"leszinzindudimanche@gmail.com\"",
+          "hits": []
+        },
+        {
+          "dork": "\"leszinzindudimanche@gmail.com\" filetype:pdf",
+          "hits": []
+        },
+        {
+          "dork": "\"leszinzindudimanche@gmail.com\" site:pastebin.com",
+          "hits": []
+        },
+        {
+          "dork": "\"leszinzindudimanche@gmail.com\" -site:gmail.com",
+          "hits": []
+        }
+      ]
+    },
+    "domain": {
+      "dns": {
+        "A": [],
+        "AAAA": [],
+        "MX": [],
+        "NS": [],
+        "TXT": [],
+        "SOA": []
+      },
+      "whois": ""
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "target": "88.160.141.130",
+  "timestamp": "2026-10-09T14:19:58.545417",
+  "sections": {
+    "ip": {
+      "status": "success",
+      "country": "France",
+      "countryCode": "FR",
+      "region": "IDF",
+      "regionName": "\u00cele-de-France",
+      "city": "Saint-Michel-sur-Orge",
+      "zip": "91240",
+      "lat": 48.6307,
+      "lon": 2.3012,
+      "timezone": "Europe/Paris",
+      "isp": "Proxad / Free SAS",
+      "org": "ProXad network / Free",
+      "as": "AS12322 Free SAS",
+      "query": "88.160.141.130"
+    }
+  }
+}

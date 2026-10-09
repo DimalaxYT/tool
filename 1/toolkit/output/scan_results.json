@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-10-09T17:03:18.681417",
+  "results": [
+    {
+      "ip": "88.160.141.130",
+      "hostname": "88-160-141-130.subs.proxad.net",
+      "mac": "?",
+      "vendor": "",
+      "ports": [
+        {
+          "port": 53,
+          "state": "open",
+          "service": "DNS",
+          "protocol": "udp/tcp",
+          "version": "",
+          "banner": ""
+        },
+        {
+          "port": 445,
+          "state": "open",
+          "service": "SMB",
+          "protocol": "tcp",
+          "version": "",
+          "banner": ""
+        }
+      ],
+      "wan": true
+    }
+  ]
+}
